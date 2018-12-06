@@ -1,15 +1,20 @@
 /*
- *  
- *  Given the latitude and longitude (in degrees) of two points compute
- *  the great circle distance (in nautical miles) between them. The
- *  following formula assumes that sin, cos, and arcos are comptued
- *  in degrees, so need to convert back and forth between radians.
- *
- *     d  = 60 * acos (sin(L1)*sin(L2) + cos(L1)*cos(L2)*cos(G1 - G2))
- *
- *
+*   Problem 4. (Great Circle) Write a program GreatCircle.java that takes four 
+*   doubles x1, y1, x2, and y2 representing the latitude and longitude in 
+*   degrees of two points on earth as command-line arguments and writes the 
+*   great-circle distance (in km) between them, given by the equation:
+*
+*   d = 111 arccos(sin(x1) sin(x2) + cos(x1) cos(x2) cos(y1 − y2)).
+*
+*   Note that this equation uses degrees, whereas Java’s trigonometric 
+*   functions use radians. Use Math.toRadians() and Math.toDegrees() to convert 
+*   between the two. Use your program to compute the great-circle distance between
+*   Paris (48.87◦ N and 2.33◦ W) and San Francisco (37.8◦ N and 122.4◦ W).
+*
+*   $ javac GreatCircle . java
+*   $ java GreatCircle 
+*
 */
-
 public class GreatCircle { 
     public static void main(String[] args) { 
         double x1 = Math.toRadians(Double.parseDouble(args[0]));
