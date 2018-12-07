@@ -12,7 +12,8 @@
 *   Paris (48.87◦ N and 2.33◦ W) and San Francisco (37.8◦ N and 122.4◦ W).
 *
 *   $ javac GreatCircle . java
-*   $ java GreatCircle 
+*   $ java GreatCircle 48.87 -2.33 37.8 -122.4
+*   8701.389543238289
 *
 */
 public class GreatCircle { 
